@@ -27,7 +27,7 @@ Dice::Dice()
 
 int Dice::roll()
 {
-	return  rand() % 5 + 1;
+	return  rand() % 6 + 1;
 }
 
 //Two globally overloaded functions
@@ -64,6 +64,7 @@ int main()
 	for (int i = 0; i < n; i++)
 	{
 		arr[i] = die.roll();
+		cout << arr[i] << endl;;
 	}
 	cout << "Average using array : " << die.average(arr, n) << endl;
 	cout << "Average using Dice object : " << die.average(die, n) << endl;
